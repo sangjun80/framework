@@ -97,9 +97,42 @@ namespace BBB
 using namespace AAA;
 */
 
+class Object
+{
+private:
+	
+public:
+	/*
+	// ** 사용자가 호출하지 않아도 스스로 호출됨.
+	// ** 클래스가 생성된 직후 호출
+	
+	Object()
+	{
+		cout << "생성자" << endl;
+	};
+	
 
-const int ID_Child = 0;
-const int ID_bullet = 1;
+	// ** 사용자가 호출한 시점에 호출
+	// ** 전달값의 개수와 자료형에 따라서 선택적으로 호출 됨
+	Object(int _Number)
+	{
+		cout << "복사 생성자" << endl;
+			
+		Number = _Number;
+	};
+
+	// ** 클래스가 삭제되기 직전
+	~Object()
+	{
+		cout << "소멸자" << endl;
+	};
+	*/
+
+
+};
+
+
+
 
 int main(void)
 {
@@ -109,20 +142,15 @@ int main(void)
 	p->Initialize();
 	p->Output();
 	*/
+	/*
+	Object o = Object(10);
 
+	cout << "Hello world!!" << endl;
+	*/
+
+	Object o = Object(Object());
 	
-	parent* p[2];
-
-	p[ID_Child] = new Child;
-	p[ID_bullet] = new bullet;
-
-	for (int i = 0; i < 2; ++i)
-	{
-		p[i]->Initialize();
-		p[i]->Output();
-	}
 	
-
 
 
 	return 0;
