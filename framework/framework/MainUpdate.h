@@ -2,8 +2,7 @@
 
 class MainUpdate
 {
-private:
-	int SceneState;
+
 public:
 	void Initialize();
 	void Update();

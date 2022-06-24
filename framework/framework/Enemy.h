@@ -10,6 +10,5 @@ public:
 	virtual void Release()override;
 public:
 	Enemy();
-	~Enemy();
+	virtual ~Enemy();
 };
-

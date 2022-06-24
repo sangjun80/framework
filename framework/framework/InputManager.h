@@ -17,8 +17,8 @@ private:
 	DWORD Key;
 public:
 	DWORD GetKey() const { return Key; }
-	
-public:	
+
+public:
 	void InputKey();
 private:
 	InputManager();

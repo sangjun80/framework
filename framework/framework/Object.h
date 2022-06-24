@@ -1,7 +1,6 @@
 #pragma once
 #include "Headers.h"
 
-
 class Object
 {
 public:
@@ -11,6 +10,7 @@ public:
 	virtual void Release()PURE;
 public:
 	Object();
-	~Object();
+	virtual ~Object();
 };
+
 
