@@ -1,10 +1,8 @@
 #pragma once
 
-
 class MainUpdate
 {
 private:
-	int Count;
 	int SceneState;
 public:
 	void Initialize();
@@ -15,3 +13,4 @@ public:
 	MainUpdate();
 	~MainUpdate();
 };
+

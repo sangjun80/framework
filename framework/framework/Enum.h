@@ -1,6 +1,5 @@
 #pragma once
 
-/*
 enum SCENEID
 {
 	LOGO,
@@ -8,5 +7,3 @@ enum SCENEID
 	STAGE,
 	EXIT,
 };
-
-*/

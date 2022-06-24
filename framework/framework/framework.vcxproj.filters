@@ -13,17 +13,38 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="헤더 파일\include">
+      <UniqueIdentifier>{8fd52a67-783e-40b4-ae1d-a198d63764b8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\00.MainUpdate">
+      <UniqueIdentifier>{98da4188-554b-47f8-9804-3ddeec2992a8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\01.Scene">
+      <UniqueIdentifier>{fa2bacd3-bc80-43d5-8d71-7359f960bcf3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\01.Scene\Menu">
+      <UniqueIdentifier>{f4a5ad50-16c0-4798-ae3b-41cc2971aa0d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\01.Scene\Stage">
+      <UniqueIdentifier>{e5920ba6-3f0c-424e-8d5a-a4b451110a80}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\01.Scene\Logo">
+      <UniqueIdentifier>{efc0f922-ac51-4d8a-998e-cbbefbe0a107}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\02. Object">
+      <UniqueIdentifier>{211205c1-7a39-4b15-85db-edbb3e5126c2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\02. Object\Player">
+      <UniqueIdentifier>{119843a3-b883-433e-8462-4441fff5e1d1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\02. Object\Enemy">
+      <UniqueIdentifier>{6e1cec34-f15c-4ff8-8e4d-f3560f10bcb2}</UniqueIdentifier>
+    </Filter>
     <Filter Include="소스 파일\99.Manager">
       <UniqueIdentifier>{82737a47-1bd7-473b-97e0-8a0e6f310684}</UniqueIdentifier>
     </Filter>
     <Filter Include="소스 파일\99.Manager\SeneManager">
       <UniqueIdentifier>{bf9880e5-d237-4889-8776-92b58458d1b3}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="소스 파일\Update">
-      <UniqueIdentifier>{98da4188-554b-47f8-9804-3ddeec2992a8}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="헤더 파일\include">
-      <UniqueIdentifier>{8fd52a67-783e-40b4-ae1d-a198d63764b8}</UniqueIdentifier>
     </Filter>
     <Filter Include="소스 파일\99.Manager\Input">
       <UniqueIdentifier>{ef912056-2371-45e2-a191-5c072ac9eb9c}</UniqueIdentifier>
@@ -37,10 +58,31 @@
       <Filter>소스 파일\99.Manager\SeneManager</Filter>
     </ClCompile>
     <ClCompile Include="MainUpdate.cpp">
-      <Filter>소스 파일\Update</Filter>
+      <Filter>소스 파일\00.MainUpdate</Filter>
     </ClCompile>
     <ClCompile Include="InputManager.cpp">
       <Filter>소스 파일\99.Manager\Input</Filter>
+    </ClCompile>
+    <ClCompile Include="Logo.cpp">
+      <Filter>소스 파일\01.Scene\Logo</Filter>
+    </ClCompile>
+    <ClCompile Include="Menu.cpp">
+      <Filter>소스 파일\01.Scene\Menu</Filter>
+    </ClCompile>
+    <ClCompile Include="Stage.cpp">
+      <Filter>소스 파일\01.Scene\Stage</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene.cpp">
+      <Filter>소스 파일\01.Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="Object.cpp">
+      <Filter>소스 파일\02. Object</Filter>
+    </ClCompile>
+    <ClCompile Include="Player.cpp">
+      <Filter>소스 파일\02. Object\Player</Filter>
+    </ClCompile>
+    <ClCompile Include="Enemy.cpp">
+      <Filter>소스 파일\02. Object\Enemy</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -51,7 +93,7 @@
       <Filter>헤더 파일</Filter>
     </ClInclude>
     <ClInclude Include="MainUpdate.h">
-      <Filter>소스 파일\Update</Filter>
+      <Filter>소스 파일\00.MainUpdate</Filter>
     </ClInclude>
     <ClInclude Include="InputManager.h">
       <Filter>소스 파일\99.Manager\Input</Filter>
@@ -61,6 +103,30 @@
     </ClInclude>
     <ClInclude Include="Enum.h">
       <Filter>헤더 파일\include</Filter>
+    </ClInclude>
+    <ClInclude Include="Logo.h">
+      <Filter>소스 파일\01.Scene\Logo</Filter>
+    </ClInclude>
+    <ClInclude Include="Menu.h">
+      <Filter>소스 파일\01.Scene\Menu</Filter>
+    </ClInclude>
+    <ClInclude Include="Stage.h">
+      <Filter>소스 파일\01.Scene\Stage</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene.h">
+      <Filter>소스 파일\01.Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="Define.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Object.h">
+      <Filter>소스 파일\02. Object</Filter>
+    </ClInclude>
+    <ClInclude Include="Player.h">
+      <Filter>소스 파일\02. Object\Player</Filter>
+    </ClInclude>
+    <ClInclude Include="Enemy.h">
+      <Filter>소스 파일\02. Object\Enemy</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
