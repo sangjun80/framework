@@ -2,8 +2,8 @@
 
 enum SCENEID
 {
-			LOGO,
-			MENU,
-			STAGE,
-			EXIT,
+	LOGO,
+	MENU,
+	STAGE,
+	EXIT,
 };

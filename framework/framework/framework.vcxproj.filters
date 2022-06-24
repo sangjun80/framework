@@ -21,15 +21,18 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="소스.cpp">
+    <ClCompile Include="main.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
     <ClCompile Include="SceneManger.cpp">
       <Filter>소스 파일\99.Manager\SeneManager</Filter>
     </ClCompile>
+    <ClCompile Include="MainUpdate.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="SceneManger.h">
+    <ClInclude Include="SceneManager.h">
       <Filter>소스 파일\99.Manager\SeneManager</Filter>
     </ClInclude>
     <ClInclude Include="Enum.h">
@@ -37,6 +40,12 @@
     </ClInclude>
     <ClInclude Include="Headers.h">
       <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Constant.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="MainUpdate.h">
+      <Filter>소스 파일</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
