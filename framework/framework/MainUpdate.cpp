@@ -2,28 +2,23 @@
 #include "SceneManager.h"
 #include "InputManager.h"
 
-MainUpdate::MainUpdate() : Count(0) { }
+MainUpdate::MainUpdate() : SceneState(0) { }
+
 MainUpdate::~MainUpdate() { Release(); }
 
 
 void MainUpdate::Initialize()
 {
-
-
-	SceneState = LOGO;	
+	SceneState = LOGO;
 	SceneManager::GetInstance()->SetScene(SceneState);
+	SceneState++;
 }
 
 void MainUpdate::Update()
 {
 	InputManager::GetInstance()->InputKey();
-	
-
-	
 
 	DWORD dwKey = InputManager::GetInstance()->GetKey();
-
-
 
 	if (dwKey & KYE_UP)
 		cout << "KYE_UP" << endl;
@@ -40,34 +35,27 @@ void MainUpdate::Update()
 	if (dwKey & KYE_SPACE)
 		cout << "KYE_SPACE" << endl;
 
-
-
 	if (dwKey & KYE_ENTER)
 	{
 		SceneManager::GetInstance()->SetScene(SceneState);
 		SceneState++;
 
-		if(SceneState > EXIT)
-
-
+		if (SceneState > EXIT)
+			SceneState = 0;
 	}
-
-
 
 	if (dwKey & KYE_CTRL)
 		cout << "KYE_CTRL" << endl;
 
 	if (dwKey & KYE_ALT)
 		cout << "KYE_ALT" << endl;
-
-	
-
 }
 
 void MainUpdate::Render()
 {
 
 }
+
 void MainUpdate::Release()
 {
 
