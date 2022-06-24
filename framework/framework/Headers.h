@@ -1,10 +1,14 @@
 #pragma once
 
-#define _CRT_SECURE_NO_WARNINGS
+#include <Windows.h>
 #include <iostream>
-
-#include "Enum.h"
-#include "Constant.h"
-
+#include <vector>
+#include <list>
+#include <map>
 
 using namespace std;
+
+
+
+#include "Constant.h"
+#include "Enum.h"

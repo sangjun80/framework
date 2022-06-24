@@ -1,96 +1,50 @@
-#include <Windows.h>
-#include <iostream>
-#include <time.h>
-#include <vector>
-#include <list>
-#include <map>
-
-using namespace std;
-
-
-
-// ** Singleton
-
-class Singleton
-{
-private:
-	static Singleton* Instance;
-
-public:
-	static Singleton* GetInstance()
-	{
-		if (Instance == nullptr)
-			Instance = new Singleton;
-		return Instance;
-	}
-
-private:
-	int Number;
-
-public:
-	int GetNumber() const { return Number; }
-	void SetNumber(const int& _Nuumber) { Number = _Nuumber; }
-
-
-private:
-	Singleton() {}
-
-public:
-	~Singleton() {}
-
-};
-
-Singleton* Singleton::Instance = nullptr;
-
-
-
-
+#include "Headers.h"
+#include "MainUpdate.h"
 
 
 
 int main(void)
 {
-	/*
-	ULONGLONG Time = GetTickCount64(); // 1/1000
+/*
+	DWORD InputKey = 0;
+	cout << "ют╥б : "; cin >> InputKey;
+	if (InputKey & KYE_UP)
+		cout << "KYE_UP" << endl;
+	if (InputKey & KYE_DOWN)
+		cout << "KYE_DOWN" << endl;
+	if (InputKey & KYE_LEFT)
+		cout << "KYE_LEFT" << endl;
+	if (InputKey & KYE_RIGHT)
+		cout << "KYE_RIGHT" << endl;
+	if (InputKey & KYE_SPACE)
+		cout << "KYE_SPACE" << endl;
+	if (InputKey & KYE_ENTER)
+		cout << "KYE_ENTER" << endl;
+	if (InputKey & KYE_CTRL)
+		cout << "KYE_CTRL" << endl;
+	if (InputKey & KYE_ALT)
+		cout << "KYE_ALT" << endl;
+	
+*/
 
-	int Count = 0;
 
-	char* Array[30];
+		MainUpdate Main;
+	Main.Initialize();
 
-	for (int y = 0; y < 30; ++y)
+	ULONGLONG Time = GetTickCount64();
+
+	while (true)
 	{
-		Array[y] = (char*)"*********************************************************************";
-	}
-
-
-	while(true)
-	{
-		if (Time + 999 < GetTickCount64())
+		if (Time + 50 < GetTickCount64())
 		{
 			Time = GetTickCount64();
 
 			system("cls");
 
-			//cout << Count++ << endl;
-
-			for (int y = 0; y < 30; ++y)
-			{
-				
-				cout << Array[y] << endl;
-			}
-			
+			Main.Update();
+			Main.Render();
 		}
-
-
 	}
-	*/
-
-	Singleton::GetInstance()->SetNumber(10);
-	cout << Singleton::GetInstance()->GetNumber() << endl;
-
-
-
-
 
 	return 0;
 }
