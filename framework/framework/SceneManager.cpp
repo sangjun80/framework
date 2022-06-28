@@ -50,4 +50,4 @@ void SceneManager::Render()
 void SceneManager::Release()
 {
 	::Safe_Delete(SceneState);
-}
+};
