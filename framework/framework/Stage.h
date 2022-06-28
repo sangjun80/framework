@@ -1,13 +1,11 @@
 #pragma once
 #include "Scene.h"
 
-
 class Object;
 class Stage : public Scene
 {
 private:
 	Object* pPlayer;
-
 public:
 	virtual void Initialize()override;
 	virtual void Update()override;
@@ -17,5 +15,4 @@ public:
 	Stage();
 	virtual ~Stage();
 };
-
 

@@ -1,29 +1,35 @@
 #include "Stage.h"
 #include "Player.h"
 #include "SceneManager.h"
+#include "ObjectManager.h"
 
 Stage::Stage() : pPlayer(nullptr) { }
-Stage::~Stage() { }
+Stage::~Stage() { Release(); }
 
 
 void Stage::Initialize()
 {
-	pPlayer = new Player;
-	pPlayer->Initialize();
+	list<Object*>* pPlayerList = ObjectManager::GetInstance()->GetObjectList("Player");
+
+	if (pPlayerList != nullptr)
+		pPlayer = pPlayerList->front()->Clone();
 }
 
 void Stage::Update()
 {
-	pPlayer->Update();
+	if (pPlayer)
+		pPlayer->Update();
 }
 
 void Stage::Render()
 {
-	pPlayer->Render();
+	if (pPlayer)
+		pPlayer->Render();
+
+	ObjectManager::GetInstance()->Render();
 }
 
 void Stage::Release()
 {
-	delete pPlayer;
-	pPlayer = nullptr;
+	::Safe_Delete(pPlayer);
 }

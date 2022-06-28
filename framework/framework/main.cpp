@@ -1,4 +1,4 @@
-// ** Framework v2.4
+// ** Framework v4.2
 #define _CRT_SECURE_NO_WARNINGS
 #include "Headers.h"
 #include "MainUpdate.h"
@@ -26,4 +26,3 @@ int main(void)
 
 	return 0;
 }
-

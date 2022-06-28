@@ -2,7 +2,6 @@
 
 class MainUpdate
 {
-
 public:
 	void Initialize();
 	void Update();

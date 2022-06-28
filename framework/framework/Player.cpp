@@ -2,42 +2,41 @@
 #include "InputManager.h"
 
 Player::Player()
-	: Horizontal(0), Vertical(0) {}
+	: Horizontal(0), Vertical(0) { }
+Player::Player(Transform _Info) : Object(_Info) { }
 Player::~Player() { }
 
 
 void Player::Initialize()
 {
+	strKey = "Player";
+
 	Horizontal = 0;
 	Vertical = 0;
 }
 
 void Player::Update()
 {
-	
 	DWORD dwKey = InputManager::GetInstance()->GetKey();
 
-	if (dwKey & KYE_UP)
+	if (dwKey & KEY_UP)
 		Vertical += 1;
 
-	if (dwKey & KYE_DOWN)
+	if (dwKey & KEY_DOWN)
 		Vertical -= 1;
 
-	if (dwKey & KYE_LEFT)
+	if (dwKey & KEY_LEFT)
 		Horizontal -= 1;
 
-	if (dwKey & KYE_RIGHT)
+	if (dwKey & KEY_RIGHT)
 		Horizontal += 1;
-
-	
-	
 }
 
 void Player::Render()
 {
+	cout << strKey << endl;
 	cout << "X : " << Horizontal << endl;
-	cout << "Y : " << Vertical << endl;
-	//Message("Player");
+	cout << "Y : " << Vertical << endl << endl;
 }
 
 void Player::Release()

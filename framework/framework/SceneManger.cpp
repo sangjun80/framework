@@ -51,4 +51,3 @@ void SceneManager::Release()
 {
 	::Safe_Delete(SceneState);
 }
-

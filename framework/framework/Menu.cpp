@@ -8,16 +8,15 @@ Menu::~Menu() { }
 
 void Menu::Initialize()
 {
+
 }
 
 void Menu::Update()
 {
 	DWORD dwKey = InputManager::GetInstance()->GetKey();
 
-	if (dwKey & KYE_ENTER)
-	{
+	if (dwKey & KEY_ENTER)
 		SceneManager::GetInstance()->SetScene(STAGE);
-	}
 }
 
 void Menu::Render()
@@ -27,4 +26,5 @@ void Menu::Render()
 
 void Menu::Release()
 {
+
 }
