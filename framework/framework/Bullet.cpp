@@ -17,7 +17,7 @@ void Bullet::Initialize()
 
 int Bullet::Update()
 {
-	TransInfo.Position.x += 2.0f;
+	TransInfo.Position.x += 0.5f;
 
 	return 0;
 }

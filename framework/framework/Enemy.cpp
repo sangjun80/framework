@@ -29,7 +29,7 @@ int Enemy::Update()
 void Enemy::Render()
 {
 	CursorManager::Draw(
-		TransInfo.Position.x,
+		TransInfo.Position.x - (TransInfo.Scale.x * 0.5f),
 		TransInfo.Position.y,
 		strKey);
 }
