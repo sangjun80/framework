@@ -6,22 +6,19 @@
 #include "Player.h"
 #include "Enemy.h"
 
-Logo::Logo() : Scene("") { }
+#include "ObjectFactory.h"
+
+Logo::Logo() { }
 Logo::~Logo() { }
 
 
 void Logo::Initialize()
 {
-	str = "Logo";
+	ObjectManager::GetInstance()->AddObject(ObjectFactory<Player>::CreateObject());
 
-	Object* pPlayer = new Player;
-	pPlayer->Initialize();
-
-	Object* pEnemy = new Enemy;
-	pEnemy->Initialize();
-
-	ObjectManager::GetInstance()->AddObject(pPlayer);
-	ObjectManager::GetInstance()->AddObject(pEnemy);
+	//Object* pEnemy = new Enemy;
+	//pEnemy->Initialize();
+	//ObjectManager::GetInstance()->AddObject(pEnemy);
 }
 
 void Logo::Update()
@@ -34,7 +31,7 @@ void Logo::Update()
 
 void Logo::Render()
 {
-	cout << str << endl;
+	cout << "Logo" << endl;
 }
 
 void Logo::Release()

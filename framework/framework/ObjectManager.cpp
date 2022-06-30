@@ -84,3 +84,4 @@ void ObjectManager::Render()
 		}
 	}
 }
+
