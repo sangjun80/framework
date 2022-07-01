@@ -16,11 +16,23 @@ void Bullet::Initialize()
 	TransInfo.Position = Vector3(0.0f, 0.0f);
 	TransInfo.Rotation = Vector3(0.0f, 0.0f);
 	TransInfo.Scale = Vector3(2.0f, 2.0f);
+
+	Vector3 Target = Vector3(60.0f, 15.0f);
+
+	Vector3 Result = Target - TransInfo.Position;
+
+	float Distance = sqrt((Result.x * Result.x) + (Result.y * Result.y));
+		TransInfo.Direction /= Distance;
+
+	//TransInfo.Direction = Vector3(0.1f, -0.06f);
 }
 
 int Bullet::Update()
 {
-	TransInfo.Position.x += 2.0f;
+	
+
+
+	TransInfo.Position += TransInfo.Direction;
 
 	return 0;
 }

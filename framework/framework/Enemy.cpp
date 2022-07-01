@@ -7,8 +7,6 @@ Enemy::~Enemy() { }
 
 
 
-
-
 void Enemy::Initialize()
 {
 	strKey = "Enemy";

@@ -5,12 +5,10 @@ ObjectManager* ObjectManager::Instance = nullptr;
 
 ObjectManager::ObjectManager()
 {
-
 }
 
 ObjectManager::~ObjectManager()
 {
-
 }
 
 
@@ -58,16 +56,6 @@ void ObjectManager::Update()
 			}
 			else
 				++iter2;
-
-
-
-
-
-
-
-
-
-
 		}
 	}
 }
