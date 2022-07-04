@@ -142,6 +142,7 @@
     <ClCompile Include="BackGround.cpp" />
     <ClCompile Include="Bullet.cpp" />
     <ClCompile Include="Cloud.cpp" />
+    <ClCompile Include="CursorManager.cpp" />
     <ClCompile Include="Enemy.cpp" />
     <ClCompile Include="InputManager.cpp" />
     <ClCompile Include="Logo.cpp" />
@@ -171,6 +172,7 @@
     <ClInclude Include="InputManager.h" />
     <ClInclude Include="Logo.h" />
     <ClInclude Include="MainUpdate.h" />
+    <ClInclude Include="MathManager.h" />
     <ClInclude Include="Menu.h" />
     <ClInclude Include="Object.h" />
     <ClInclude Include="ObjectFactory.h" />
