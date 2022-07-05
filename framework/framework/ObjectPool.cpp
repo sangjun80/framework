@@ -6,6 +6,8 @@ ObjectPool::ObjectPool(){}
 ObjectPool::~ObjectPool(){}
 
 
+
+
 void ObjectPool::Update()
 {
 	for (map<string, list<Object*>>::iterator iter = EnableList.begin();
