@@ -1,4 +1,4 @@
-// ** Framework v7.1  ObjectFactory & UserInterfaced
+// ** Framework v9.3 ( DoubleBuffer )
 #define _CRT_SECURE_NO_WARNINGS
 #include "Headers.h"
 #include "MainUpdate.h"
@@ -30,4 +30,6 @@ int main(void)
 
 	return 0;
 }
+
+
 

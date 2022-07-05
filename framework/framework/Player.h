@@ -15,4 +15,3 @@ public:
 	Player(Transform _TransInfo);
 	virtual ~Player();
 };
-

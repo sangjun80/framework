@@ -1,1 +1,7 @@
-#include "MathManager.h"
+#pragma once
+#include "Headers.h"
+
+class MathManager
+{
+
+};

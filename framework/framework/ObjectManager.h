@@ -1,7 +1,6 @@
 #pragma once
 #include "Headers.h"
 
-
 class Object;
 class ObjectManager
 {

@@ -1,7 +1,7 @@
 #include "MainUpdate.h"
 #include "SceneManager.h"
-#include "InputManager.h"
 #include "CursorManager.h"
+#include "InputManager.h"
 
 MainUpdate::MainUpdate() { }
 MainUpdate::~MainUpdate() { Release(); }
@@ -9,8 +9,7 @@ MainUpdate::~MainUpdate() { Release(); }
 
 void MainUpdate::Initialize()
 {
-	CursorManager::GetInstance()->CreateBuffer(120.f, 30.0f);
-
+	CursorManager::GetInstance()->CreateBuffer(ConsoleWidthSize, ConsoleHeightSize);
 	SceneManager::GetInstance()->SetScene(LOGO);
 }
 
@@ -20,7 +19,6 @@ void MainUpdate::Update()
 	SceneManager::GetInstance()->Update();
 
 	CursorManager::GetInstance()->FlippingBuffer();
-	CursorManager::GetInstance()->ClearBuffer();
 }
 
 void MainUpdate::Render()
