@@ -3,15 +3,8 @@
 
 ObjectManager* ObjectManager::Instance = nullptr;
 
-ObjectManager::ObjectManager()
-{
-
-}
-
-ObjectManager::~ObjectManager()
-{
-
-}
+ObjectManager::ObjectManager() { }
+ObjectManager::~ObjectManager() { }
 
 
 void ObjectManager::AddObject(Object* _Object)

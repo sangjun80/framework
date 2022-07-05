@@ -58,6 +58,9 @@
     <ClCompile Include="Enemy.cpp">
       <Filter>02.Object\Enemy</Filter>
     </ClCompile>
+    <ClCompile Include="ObjectPool.cpp">
+      <Filter>98.Pattern</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Logo.h">
@@ -135,6 +138,9 @@
     <ClInclude Include="Enum.h">
       <Filter>헤더 파일\Include</Filter>
     </ClInclude>
+    <ClInclude Include="ObjectPool.h">
+      <Filter>98.Pattern</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="소스 파일">
@@ -211,6 +217,9 @@
     </Filter>
     <Filter Include="02.Object\Enemy">
       <UniqueIdentifier>{b065c799-f776-4d8a-b223-bd9e9ae08890}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="98.Pattern">
+      <UniqueIdentifier>{4c6a2966-479b-4abc-8210-f5f51ac83607}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
 </Project>
