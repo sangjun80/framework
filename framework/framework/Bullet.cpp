@@ -36,27 +36,27 @@ void Bullet::Initialize()
 
 int Bullet::Update()
 {
-	//cout << TransInfo.Direction.x << endl;
-	//cout << TransInfo.Direction.y << endl;
+	//printf_s("%f\n", TransInfo.Direction.x);
+	//printf_s("%f\n", TransInfo.Direction.y);
 
-	printf_s("%f\n", TransInfo.Direction.x);
-	printf_s("%f\n", TransInfo.Direction.y);
-	printf_s("%f\n", TransInfo.Direction.z);
+	Vector3 Target = Vector3(60.0f, 15.0f);
 
-	TransInfo.Position += TransInfo.Direction * 5.0f;
+	float Width = Target.x - TransInfo.Position.x;
+	float Height = Target.y - TransInfo.Position.y;
+
+	float Distance = sqrt((Width * Width) + (Height * Height));
+
+	TransInfo.Direction = Vector3(Width / Distance, Height / Distance);
+
+	TransInfo.Position += TransInfo.Direction;
 
 	return 0;
 }
 
 void Bullet::Render()
 {
-	for (int i = 0; i < MAX_SIZE; ++i)
-	{
-		CursorManager::Draw(
-			TransInfo.Position.x - (TransInfo.Scale.x * 0.5f),
-			TransInfo.Position.y - (TransInfo.Scale.y * 0.5f) + i,
-			Buffer[i]);
-	}
+	CursorManager::GetInstance()->WriteBuffer(
+		TransInfo.Position, (char*)"ABCDEFG", 0);
 }
 
 void Bullet::Release()
