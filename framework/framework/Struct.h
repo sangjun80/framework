@@ -16,45 +16,6 @@ struct Vector3
 	{
 		return Vector3(this->x + _V1.x, this->y + _V1.y, this->z + _V1.z);
 	}
-
-	Vector3 operator-(Vector3 _V1)
-	{
-		return Vector3(this->x - _V1.x, this->y - _V1.y, this->z - _V1.z);
-	}
-
-<<<<<<< HEAD
-=======
-	
->>>>>>> bac5b1e44c304e42247896305c7d38108e172a5f
-	Vector3 operator+=(Vector3 _V1)
-	{
-		return Vector3(this->x += _V1.x, this->y += _V1.y, this->z += _V1.z);
-	}
-<<<<<<< HEAD
-	/*
-	Vector3 operator/=(float _Value)
-	{
-		return Vector3(this->x /= _Value, this->y /= _Value, this->z /= _Value);
-	}
-	*/
-=======
->>>>>>> bac5b1e44c304e42247896305c7d38108e172a5f
-
-	Vector3 operator*(float _Value)
-	{
-		return Vector3(this->x * _Value * 2, this->y * _Value, this->z * _Value);
-	}
-<<<<<<< HEAD
-=======
-
-	Vector3 operator/=(float _Value)
-	{
-		return Vector3(this->x /= _Value, this->y /= _Value, this->z /= _Value);
-	}
-
-	
-
->>>>>>> bac5b1e44c304e42247896305c7d38108e172a5f
 };
 
 struct Transform
