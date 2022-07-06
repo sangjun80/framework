@@ -4,7 +4,8 @@
 class Object
 {
 protected:
-	Transform TransInfo;
+	static list<Object*> BulletList;
+ 	Transform TransInfo;
 	string strKey;
 	int Color;
 	char* Buffer[MAX_SIZE];

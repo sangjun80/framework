@@ -71,9 +71,6 @@ void Stage::Update()
 				if (CollisionManager::Collision(pPlayer, *Enemyiter))
 				{
 
-
-
-
 				}
 
 				if (pBulletList != nullptr)
@@ -83,9 +80,6 @@ void Stage::Update()
 					{
 						if (CollisionManager::Collision(*Bulletiter, *Enemyiter))
 						{
-
-
-
 
 						}
 					}

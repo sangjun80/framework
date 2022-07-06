@@ -1,5 +1,4 @@
 #pragma once
-#pragma once
 #include "Headers.h"
 
 class Object;
@@ -16,7 +15,6 @@ public:
 		return Instance;
 	}
 private:
-	//map<string, list<Object*>>* EnableList;
 	static map<string, list<Object*>> EnableList;
 	map<string, list<Object*>> DisableList;
 public:
