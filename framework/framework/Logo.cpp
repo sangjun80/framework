@@ -5,7 +5,6 @@
 #include "ObjectManager.h"
 #include "Player.h"
 #include "Enemy.h"
-
 #include "ObjectFactory.h"
 
 Logo::Logo() { }
@@ -14,8 +13,8 @@ Logo::~Logo() { }
 
 void Logo::Initialize()
 {
-	ObjectManager::GetInstance()->AddObject(ObjectFactory<Player>::CreateObject());
-	SceneManager::GetInstance()->SetScene(STAGE);
+	//ObjectManager::GetInstance()->AddObject( ObjectFactory<Player>::CreateObject() );
+	//SceneManager::GetInstance()->SetScene(SCENEID::STAGE);
 	//Object* pEnemy = new Enemy;
 	//pEnemy->Initialize();
 	//ObjectManager::GetInstance()->AddObject(pEnemy);
@@ -26,7 +25,7 @@ void Logo::Update()
 	DWORD dwKey = InputManager::GetInstance()->GetKey();
 
 	if (dwKey & KEY_ENTER)
-		SceneManager::GetInstance()->SetScene(MENU);
+		SceneManager::GetInstance()->SetScene(SCENEID::MENU);
 }
 
 void Logo::Render()

@@ -6,6 +6,7 @@
 
 
 SceneManager* SceneManager::Instance = nullptr;
+
 SceneManager::SceneManager() : SceneState(nullptr) { }
 SceneManager::~SceneManager() { Release(); }
 

@@ -7,21 +7,22 @@ Bullet::Bullet(Transform _TransInfo) : Object(_TransInfo) { }
 Bullet::~Bullet() { }
 
 
-void Bullet::Initialize()
+Object* Bullet::Initialize(string _Key)
 {
-	strKey = "Bullet";
+	strKey = _Key;
 
 	Buffer[0] = (char*)"¡¬";
 	Buffer[1] = (char*)"£¯";
 
 	TransInfo.Position = Vector3(0.0f, 0.0f);
 	TransInfo.Rotation = Vector3(0.0f, 0.0f);
-	TransInfo.Scale = Vector3(2.0f, 2.0f);
+	TransInfo.Scale = Vector3((float)strlen(Buffer[0]), (float)MAX_SIZE);
 
 	TransInfo.Direction = Vector3(0.0f, 0.0f);
 
-	
+	Color = 13;
 
+	return this;
 }
 
 int Bullet::Update()
@@ -31,20 +32,16 @@ int Bullet::Update()
 
 	TransInfo.Position += TransInfo.Direction;
 
-	float Distance = MathManager::GetDistance(
-		TransInfo.Position, Vector3(60.0f, 15.0f));
-
-
-	if (Distance < 4)
-		return 2;
-
 	return 0;
 }
 
 void Bullet::Render()
 {
-	CursorManager::GetInstance()->WriteBuffer(
-		TransInfo.Position, (char*)"ABCDEFG");
+	for (int i = 0; i < 2; ++i)
+		CursorManager::GetInstance()->WriteBuffer(
+			TransInfo.Position.x,
+			TransInfo.Position.y + i,
+			Buffer[i], Color);
 }
 
 void Bullet::Release()

@@ -59,7 +59,10 @@
       <Filter>소스 파일\02.Object\Enemy</Filter>
     </ClCompile>
     <ClCompile Include="ObjectPool.cpp">
-      <Filter>소스 파일\98.Pattern</Filter>
+      <Filter>소스 파일\98.Pattern\ObjectPool</Filter>
+    </ClCompile>
+    <ClCompile Include="Prototype.cpp">
+      <Filter>소스 파일\98.Pattern\Prototype</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -139,7 +142,10 @@
       <Filter>헤더 파일\Include</Filter>
     </ClInclude>
     <ClInclude Include="ObjectPool.h">
-      <Filter>소스 파일\98.Pattern</Filter>
+      <Filter>소스 파일\98.Pattern\ObjectPool</Filter>
+    </ClInclude>
+    <ClInclude Include="Prototype.h">
+      <Filter>소스 파일\98.Pattern\Prototype</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -220,6 +226,12 @@
     </Filter>
     <Filter Include="소스 파일\99.Manager\SceneManager">
       <UniqueIdentifier>{4bfe5698-7d76-4007-9f24-5238cb970d24}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\98.Pattern\ObjectPool">
+      <UniqueIdentifier>{71bf7cd1-1b86-404e-a726-e34d11cb3125}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\98.Pattern\Prototype">
+      <UniqueIdentifier>{3d9fedc8-063e-439e-9db3-d440cc2a23ab}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
 </Project>

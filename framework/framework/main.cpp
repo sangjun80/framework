@@ -1,7 +1,8 @@
-// ** Framework v9.3 ( DoubleBuffer )
+// ** Framework v13.0   ( Prototype )
 #define _CRT_SECURE_NO_WARNINGS
 #include "Headers.h"
 #include "MainUpdate.h"
+
 
 
 int main(void)
@@ -30,6 +31,8 @@ int main(void)
 
 	return 0;
 }
+
+
 
 
 

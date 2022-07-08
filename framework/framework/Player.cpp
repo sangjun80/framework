@@ -10,9 +10,9 @@ Player::Player(Transform _TransInfo) : Object(_TransInfo) { }
 Player::~Player() { }
 
 
-void Player::Initialize()
+Object* Player::Initialize(string _Key)
 {
-	strKey = "Player";
+	strKey = _Key;
 
 	Buffer[0] = (char*)"¿À";
 	Buffer[1] = (char*)"¤µ";
@@ -22,6 +22,8 @@ void Player::Initialize()
 	TransInfo.Scale = Vector3(2.0f, 2.0f);
 
 	Color = 15;
+
+	return this;
 }
 
 int Player::Update()
@@ -42,8 +44,7 @@ int Player::Update()
 
 	if (dwKey & KEY_SPACE)
 	{
-		ObjectManager::GetInstance()->AddObject(
-			ObjectFactory<Bullet>::CreateObject(TransInfo.Position));
+		ObjectManager::GetInstance()->AddObject("Bullet");
 	}
 
 	return 0;
@@ -51,8 +52,11 @@ int Player::Update()
 
 void Player::Render()
 {
-	CursorManager::GetInstance()->WriteBuffer(
-		TransInfo.Position, (char*)"ABCDEFG", Color);
+	for (int i = 0; i < 2; ++i)
+		CursorManager::GetInstance()->WriteBuffer(
+			TransInfo.Position.x,
+			TransInfo.Position.y + i,
+			Buffer[i], Color);
 }
 
 void Player::Release()

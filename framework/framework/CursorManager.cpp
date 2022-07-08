@@ -37,19 +37,6 @@ void CursorManager::CreateBuffer(const int& _Width, const int& _Height)
 		// ** 커서 셋팅
 		SetConsoleCursorInfo(hBuffer[i], &Cursor);
 	}
-
-	/*
-	hBuffer[0] = CreateConsoleScreenBuffer(GENERIC_READ | GENERIC_WRITE, 0, NULL, CONSOLE_TEXTMODE_BUFFER, NULL);
-	SetConsoleScreenBufferSize(hBuffer[0], Size);
-	SetConsoleWindowInfo(hBuffer[0], TRUE, &rect);
-
-	hBuffer[1] = CreateConsoleScreenBuffer(GENERIC_READ | GENERIC_WRITE, 0, NULL, CONSOLE_TEXTMODE_BUFFER, NULL);
-	SetConsoleScreenBufferSize(hBuffer[1], Size);
-	SetConsoleWindowInfo(hBuffer[1], TRUE, &rect);
-
-	SetConsoleCursorInfo(hBuffer[0], &Cursor);
-	SetConsoleCursorInfo(hBuffer[1], &Cursor);
-	*/
 }
 
 void CursorManager::WriteBuffer(float _x, float _y, char* _str, int _Color)
@@ -68,6 +55,28 @@ void CursorManager::WriteBuffer(float _x, float _y, char* _str, int _Color)
 	WriteFile(hBuffer[BufferIndex], _str, (DWORD)strlen(_str), &dw, NULL);
 }
 
+void CursorManager::WriteBuffer(float _x, float _y, int _Value, int _Color)
+{
+	DWORD dw;
+
+	COORD CurSorPosition = { (SHORT)_x ,(SHORT)_y };
+
+	// 좌표 이동
+	SetConsoleCursorPosition(hBuffer[BufferIndex], CurSorPosition);
+
+	// ** 텍스트 색 변경
+	SetColor(_Color);
+
+	char Buffer[4];
+	_itoa(_Value, Buffer, 10);
+
+	char* pBuffer = new char[strlen(Buffer)];
+	strcpy(pBuffer, Buffer);
+
+	// 버퍼에 쓰기
+	WriteFile(hBuffer[BufferIndex], pBuffer, (DWORD)strlen(pBuffer), &dw, NULL);
+}
+
 void CursorManager::WriteBuffer(Vector3 _Position, char* _str, int _Color)
 {
 	DWORD dw;
@@ -82,6 +91,29 @@ void CursorManager::WriteBuffer(Vector3 _Position, char* _str, int _Color)
 
 	// 버퍼에 쓰기
 	WriteFile(hBuffer[BufferIndex], _str, (DWORD)strlen(_str), &dw, NULL);
+}
+
+void CursorManager::WriteBuffer(Vector3 _Position, int _Value, int _Color)
+{
+	DWORD dw;
+
+	COORD CurSorPosition = { (SHORT)_Position.x ,(SHORT)_Position.y };
+
+	// 좌표 이동
+	SetConsoleCursorPosition(hBuffer[BufferIndex], CurSorPosition);
+
+	// ** 텍스트 색 변경
+	SetColor(_Color);
+
+
+	char Buffer[4];
+	_itoa(_Value, Buffer, 10);
+
+	char* pBuffer = new char[strlen(Buffer)];
+	strcpy(pBuffer, Buffer);
+
+	// 버퍼에 쓰기
+	WriteFile(hBuffer[BufferIndex], pBuffer, (DWORD)strlen(pBuffer), &dw, NULL);
 }
 
 void CursorManager::FlippingBuffer()
@@ -110,6 +142,7 @@ void CursorManager::SetColor(int _Color)
 {
 	SetConsoleTextAttribute(hBuffer[BufferIndex], _Color);
 }
+
 
 
 
