@@ -9,7 +9,7 @@ int main(void)
 {
 	system("title 홍길동 - 게임명");
 
-	system("mode con cols=120 lines=30");
+	system("mode con cols=75 lines=45");
 
 	MainUpdate Main;
 	Main.Initialize();

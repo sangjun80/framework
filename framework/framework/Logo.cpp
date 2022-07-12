@@ -1,4 +1,4 @@
-#include "Logo.h"
+﻿#include "Logo.h"
 #include "SceneManager.h"
 #include "InputManager.h"
 
@@ -27,7 +27,13 @@ void Logo::Update()
 
 void Logo::Render()
 {
-	CursorManager::GetInstance()->WriteBuffer(0.0f, 0.0f, (char*)"Logo");
+	CursorManager::GetInstance()->WriteBuffer
+	(10.0f, 10.0f, (char*)"s");
+	CursorManager::GetInstance()->WriteBuffer
+	(10.0f, 11.0f, (char*)"sss");
+
+
+	
 }
 
 void Logo::Release()
