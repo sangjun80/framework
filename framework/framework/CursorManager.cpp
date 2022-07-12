@@ -144,5 +144,3 @@ void CursorManager::SetColor(int _Color)
 }
 
 
-
-

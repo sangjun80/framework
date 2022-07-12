@@ -3,6 +3,8 @@
 
 class Player : public Object
 {
+private:
+	Object* pPlayer;
 public:
 	virtual Object* Initialize(string _Key)override;
 	virtual int Update()override;
@@ -15,4 +17,3 @@ public:
 	Player(Transform _TransInfo);
 	virtual ~Player();
 };
-

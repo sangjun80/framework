@@ -64,6 +64,9 @@
     <ClCompile Include="Prototype.cpp">
       <Filter>소스 파일\98.Pattern\Prototype</Filter>
     </ClCompile>
+    <ClCompile Include="NormalBullet.cpp">
+      <Filter>소스 파일\02.Object\Bullet\BulletBridge\NormalBullet</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Logo.h">
@@ -146,6 +149,15 @@
     </ClInclude>
     <ClInclude Include="Prototype.h">
       <Filter>소스 파일\98.Pattern\Prototype</Filter>
+    </ClInclude>
+    <ClInclude Include="NormalBullet.h">
+      <Filter>소스 파일\02.Object\Bullet\BulletBridge\NormalBullet</Filter>
+    </ClInclude>
+    <ClInclude Include="BulletBridge.h">
+      <Filter>소스 파일\02.Object\Bullet\BulletBridge</Filter>
+    </ClInclude>
+    <ClInclude Include="Bridge.h">
+      <Filter>소스 파일\98.Pattern\Bridge</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -232,6 +244,15 @@
     </Filter>
     <Filter Include="소스 파일\98.Pattern\Prototype">
       <UniqueIdentifier>{3d9fedc8-063e-439e-9db3-d440cc2a23ab}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\02.Object\Bullet\BulletBridge">
+      <UniqueIdentifier>{020e089e-aab2-4e5d-8320-eb6e85d87d51}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\02.Object\Bullet\BulletBridge\NormalBullet">
+      <UniqueIdentifier>{aac26790-b481-4504-9453-212979b671b4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\98.Pattern\Bridge">
+      <UniqueIdentifier>{f10680d7-b767-4cf0-88bc-2f6a15b3f3aa}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
 </Project>
