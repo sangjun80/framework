@@ -22,7 +22,9 @@ void Menu::Update()
 
 void Menu::Render()
 {
-	CursorManager::GetInstance()->WriteBuffer(0.0f, 0.0f, (char*)"Menu");
+	CursorManager::GetInstance()->WriteBuffer(15.0f, 14.0f, (char*)"Menu");
+	CursorManager::GetInstance()->WriteBuffer(15.0f, 15.0f, (char*)"Selete char");
+	CursorManager::GetInstance()->WriteBuffer(15.0f, 16.0f, (char*)"Ranking");
 }
 
 void Menu::Release()

@@ -7,7 +7,7 @@
 
 int main(void)
 {
-	system("title 홍길동 - 게임명");
+	system("title 이상준 - Pixel Dungeon");
 
 	system("mode con cols=75 lines=45");
 

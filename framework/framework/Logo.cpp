@@ -27,10 +27,26 @@ void Logo::Update()
 
 void Logo::Render()
 {
+	//Pixel
 	CursorManager::GetInstance()->WriteBuffer
-	(10.0f, 10.0f, (char*)"s");
+	(19.0f, 8.0f, (char*)"□■■■                         □  ");
 	CursorManager::GetInstance()->WriteBuffer
-	(10.0f, 11.0f, (char*)"sss");
+	(19.0f, 9.0f, (char*)"■     ■                        ■");
+	CursorManager::GetInstance()->WriteBuffer
+	(19.0f, 10.0f, (char*)"■     ■                        ■ ");
+	CursorManager::GetInstance()->WriteBuffer
+	(19.0f, 11.0f, (char*)"■■■■  □  □    ■   □■    ■");
+	CursorManager::GetInstance()->WriteBuffer
+	(19.0f, 12.0f, (char*)"■        ■    ■■    ■   ■  ■");
+	CursorManager::GetInstance()->WriteBuffer
+	(19.0f, 13.0f, (char*)"■        ■    ■■   ■ ■■   ■");
+	CursorManager::GetInstance()->WriteBuffer
+	(19.0f, 14.0f, (char*)"■        ■  ■    ■  ■■■   ■");
+
+	//Dungeon
+	CursorManager::GetInstance()->WriteBuffer
+	(13.0f, 16.0f, (char*)"■■■■■");
+
 
 
 	

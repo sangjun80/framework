@@ -15,8 +15,8 @@ Object* Player::Initialize(string _Key)
 {
 	strKey = _Key;
 
-	Buffer[0] = (char*)"¿À";
-	Buffer[1] = (char*)"¤µ";
+	Buffer[0] = (char*)"¤±";
+	Buffer[1] = (char*)"";
 
 	TransInfo.Position = Vector3(20.0f, 15.0f);
 	TransInfo.Rotation = Vector3(0.0f, 0.0f);
