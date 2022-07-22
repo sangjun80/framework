@@ -119,6 +119,7 @@ void Logo::Render()
 	CursorManager::GetInstance()->WriteBuffer
 	(0.0f, 44.0f, (char*)"■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■");
 
+
 	//막대기
 	CursorManager::GetInstance()->WriteBuffer
 	(6.0f, 3.0f, (char*)"□■■■■■■■■■■■■■■■■■■■■■■■■■■■■■□  ");
