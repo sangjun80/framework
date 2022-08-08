@@ -164,27 +164,63 @@ void Menu::Render()
 
 	// Start ─о╡╬░│▒│┬ў
 	{
+	// ┐└╕е┬╩─о
+	CursorManager::GetInstance()->WriteBuffer(12.0f, 14.0f, (char*)"бс");
+	CursorManager::GetInstance()->WriteBuffer(12.0f, 15.0f, (char*)"бс");
 	CursorManager::GetInstance()->WriteBuffer(14.0f, 15.0f, (char*)"бс");
 	CursorManager::GetInstance()->WriteBuffer(14.0f, 16.0f, (char*)"бс");
 	CursorManager::GetInstance()->WriteBuffer(16.0f, 16.0f, (char*)"бс");
 	CursorManager::GetInstance()->WriteBuffer(16.0f, 17.0f, (char*)"бс");
 	CursorManager::GetInstance()->WriteBuffer(18.0f, 17.0f, (char*)"бс");
-	CursorManager::GetInstance()->WriteBuffer(16.0f, 18.0f, (char*)"бс");
-	CursorManager::GetInstance()->WriteBuffer(18.0f, 18.0f, (char*)"бс");
-	CursorManager::GetInstance()->WriteBuffer(17.0f, 19.0f, (char*)"бс");
-	CursorManager::GetInstance()->WriteBuffer(19.0f, 19.0f, (char*)"бс");
-	CursorManager::GetInstance()->WriteBuffer(18.0f, 20.0f, (char*)"бс");
-	CursorManager::GetInstance()->WriteBuffer(20.0f, 20.0f, (char*)"бс");
-	CursorManager::GetInstance()->WriteBuffer(19.0f, 21.0f, (char*)"бс");
-	CursorManager::GetInstance()->WriteBuffer(21.0f, 21.0f, (char*)"бс");
-	CursorManager::GetInstance()->WriteBuffer(23.0f, 21.0f, (char*)"бс");
-	CursorManager::GetInstance()->WriteBuffer(20.0f, 22.0f, (char*)"бс");
-	CursorManager::GetInstance()->WriteBuffer(22.0f, 22.0f, (char*)"бс");
+	CursorManager::GetInstance()->WriteBuffer(17.0f, 18.0f, (char*)"бс");
+	CursorManager::GetInstance()->WriteBuffer(19.0f, 18.0f, (char*)"бс");
+	CursorManager::GetInstance()->WriteBuffer(18.0f, 19.0f, (char*)"бс");
+	CursorManager::GetInstance()->WriteBuffer(20.0f, 19.0f, (char*)"бс");
+	CursorManager::GetInstance()->WriteBuffer(19.0f, 20.0f, (char*)"бс");
+	CursorManager::GetInstance()->WriteBuffer(21.0f, 20.0f, (char*)"бс");
+	CursorManager::GetInstance()->WriteBuffer(26.0f, 20.0f, (char*)"бс");
+	CursorManager::GetInstance()->WriteBuffer(20.0f, 21.0f, (char*)"бс");
+	CursorManager::GetInstance()->WriteBuffer(22.0f, 21.0f, (char*)"бс");
+	CursorManager::GetInstance()->WriteBuffer(24.0f, 21.0f, (char*)"бс");
+	CursorManager::GetInstance()->WriteBuffer(21.0f, 22.0f, (char*)"бс");
+	CursorManager::GetInstance()->WriteBuffer(23.0f, 22.0f, (char*)"бс");
+	CursorManager::GetInstance()->WriteBuffer(19.0f, 23.0f, (char*)"бс");
+	CursorManager::GetInstance()->WriteBuffer(25.0f, 23.0f, (char*)"бс");
+	CursorManager::GetInstance()->WriteBuffer(27.0f, 24.0f, (char*)"бс");
+
+	// ┐▐┬╩─о
+	CursorManager::GetInstance()->WriteBuffer(24.0f, 14.0f, (char*)"бр");
+	CursorManager::GetInstance()->WriteBuffer(22.0f, 15.0f, (char*)"бр");
+	CursorManager::GetInstance()->WriteBuffer(24.0f, 15.0f, (char*)"бр");
+	CursorManager::GetInstance()->WriteBuffer(20.0f, 16.0f, (char*)"бр");
+	CursorManager::GetInstance()->WriteBuffer(22.0f, 16.0f, (char*)"бр");
+	CursorManager::GetInstance()->WriteBuffer(20.0f, 17.0f, (char*)"бр");
+	CursorManager::GetInstance()->WriteBuffer(16.0f, 19.0f, (char*)"бр");
+	CursorManager::GetInstance()->WriteBuffer(15.0f, 20.0f, (char*)"бр");
+	CursorManager::GetInstance()->WriteBuffer(17.0f, 20.0f, (char*)"бр");
+	CursorManager::GetInstance()->WriteBuffer(10.0f, 20.0f, (char*)"бр");
+	CursorManager::GetInstance()->WriteBuffer(12.0f, 21.0f, (char*)"бр");
+	CursorManager::GetInstance()->WriteBuffer(14.0f, 21.0f, (char*)"бр");
+	CursorManager::GetInstance()->WriteBuffer(16.0f, 21.0f, (char*)"бр");
+	CursorManager::GetInstance()->WriteBuffer(13.0f, 22.0f, (char*)"бр");
+	CursorManager::GetInstance()->WriteBuffer(15.0f, 22.0f, (char*)"бр");
+	CursorManager::GetInstance()->WriteBuffer(11.0f, 23.0f, (char*)"бр");
+	CursorManager::GetInstance()->WriteBuffer(17.0f, 23.0f, (char*)"бр");
+	CursorManager::GetInstance()->WriteBuffer(9.0f, 24.0f, (char*)"бр");
+
 	}
 	
 	// Ranking ┐╒░№ or ╞о╖╬╟╟
 	{
-		//d
+		CursorManager::GetInstance()->WriteBuffer(44.0f, 14.0f, (char*)"бс");
+
+
+
+
+		CursorManager::GetInstance()->WriteBuffer(40.0f, 24.0f, (char*)"бс");
+		CursorManager::GetInstance()->WriteBuffer(42.0f, 24.0f, (char*)"бс");
+		CursorManager::GetInstance()->WriteBuffer(44.0f, 24.0f, (char*)"бс");
+		CursorManager::GetInstance()->WriteBuffer(46.0f, 24.0f, (char*)"бс");
 	}
 
 	// Option ┼щ┤╧
