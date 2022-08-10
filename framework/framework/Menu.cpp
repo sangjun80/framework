@@ -119,6 +119,9 @@ void Menu::Render()
 
 	// Menu
 	{
+	//
+	CursorManager::GetInstance()->WriteBuffer(12.0f, 6.0f, (char*)"бсбс");
+	CursorManager::GetInstance()->WriteBuffer(58.0f, 6.0f, (char*)"бсбс");
 	// M
 	CursorManager::GetInstance()->WriteBuffer(18.0f, 5.0f, (char*)"бр");
 	CursorManager::GetInstance()->WriteBuffer(18.0f, 6.0f, (char*)"бр");
@@ -212,38 +215,37 @@ void Menu::Render()
 	
 	// Ranking ┐╒░№
 	{
-		CursorManager::GetInstance()->WriteBuffer(40.0f, 14.0f, (char*)"бр");
-		CursorManager::GetInstance()->WriteBuffer(50.0f, 14.0f, (char*)"бр");
-		CursorManager::GetInstance()->WriteBuffer(60.0f, 14.0f, (char*)"бр");
+		CursorManager::GetInstance()->WriteBuffer(42.0f, 14.0f, (char*)"бр");
+		CursorManager::GetInstance()->WriteBuffer(52.0f, 14.0f, (char*)"бр");
+		CursorManager::GetInstance()->WriteBuffer(62.0f, 14.0f, (char*)"бр");
 
-		CursorManager::GetInstance()->WriteBuffer(40.0f, 15.0f, (char*)"бс");
 		CursorManager::GetInstance()->WriteBuffer(42.0f, 15.0f, (char*)"бс");
-		CursorManager::GetInstance()->WriteBuffer(58.0f, 15.0f, (char*)"бс");
+		CursorManager::GetInstance()->WriteBuffer(44.0f, 15.0f, (char*)"бс");
 		CursorManager::GetInstance()->WriteBuffer(60.0f, 15.0f, (char*)"бс");
-		CursorManager::GetInstance()->WriteBuffer(49.0f, 15.0f, (char*)"бс");
+		CursorManager::GetInstance()->WriteBuffer(62.0f, 15.0f, (char*)"бс");
 		CursorManager::GetInstance()->WriteBuffer(51.0f, 15.0f, (char*)"бс");
+		CursorManager::GetInstance()->WriteBuffer(53.0f, 15.0f, (char*)"бс");
 
-		CursorManager::GetInstance()->WriteBuffer(40.0f, 16.0f, (char*)"бс");
 		CursorManager::GetInstance()->WriteBuffer(42.0f, 16.0f, (char*)"бс");
 		CursorManager::GetInstance()->WriteBuffer(44.0f, 16.0f, (char*)"бс");
-		CursorManager::GetInstance()->WriteBuffer(48.0f, 16.0f, (char*)"бс");
+		CursorManager::GetInstance()->WriteBuffer(46.0f, 16.0f, (char*)"бс");
 		CursorManager::GetInstance()->WriteBuffer(50.0f, 16.0f, (char*)"бс");
 		CursorManager::GetInstance()->WriteBuffer(52.0f, 16.0f, (char*)"бс");
-		CursorManager::GetInstance()->WriteBuffer(56.0f, 16.0f, (char*)"бс");
+		CursorManager::GetInstance()->WriteBuffer(54.0f, 16.0f, (char*)"бс");
 		CursorManager::GetInstance()->WriteBuffer(58.0f, 16.0f, (char*)"бс");
 		CursorManager::GetInstance()->WriteBuffer(60.0f, 16.0f, (char*)"бс");
+		CursorManager::GetInstance()->WriteBuffer(62.0f, 16.0f, (char*)"бс");
 
-		CursorManager::GetInstance()->WriteBuffer(40.0f, 17.0f, (char*)"бс");
-		CursorManager::GetInstance()->WriteBuffer(42.0f, 17.0f, (char*)"бр");
-		CursorManager::GetInstance()->WriteBuffer(44.0f, 17.0f, (char*)"бс");
-		CursorManager::GetInstance()->WriteBuffer(48.0f, 17.0f, (char*)"бс");
-		CursorManager::GetInstance()->WriteBuffer(50.0f, 17.0f, (char*)"бр");
-		CursorManager::GetInstance()->WriteBuffer(52.0f, 17.0f, (char*)"бс");
-		CursorManager::GetInstance()->WriteBuffer(56.0f, 17.0f, (char*)"бс");
-		CursorManager::GetInstance()->WriteBuffer(58.0f, 17.0f, (char*)"бр");
-		CursorManager::GetInstance()->WriteBuffer(60.0f, 17.0f, (char*)"бс");
+		CursorManager::GetInstance()->WriteBuffer(42.0f, 17.0f, (char*)"бс");
+		CursorManager::GetInstance()->WriteBuffer(44.0f, 17.0f, (char*)"бр");
+		CursorManager::GetInstance()->WriteBuffer(46.0f, 17.0f, (char*)"бс");
+		CursorManager::GetInstance()->WriteBuffer(50.0f, 17.0f, (char*)"бс");
+		CursorManager::GetInstance()->WriteBuffer(52.0f, 17.0f, (char*)"бр");
+		CursorManager::GetInstance()->WriteBuffer(54.0f, 17.0f, (char*)"бс");
+		CursorManager::GetInstance()->WriteBuffer(58.0f, 17.0f, (char*)"бс");
+		CursorManager::GetInstance()->WriteBuffer(60.0f, 17.0f, (char*)"бр");
+		CursorManager::GetInstance()->WriteBuffer(62.0f, 17.0f, (char*)"бс");
 
-		CursorManager::GetInstance()->WriteBuffer(40.0f, 18.0f, (char*)"бс");
 		CursorManager::GetInstance()->WriteBuffer(42.0f, 18.0f, (char*)"бс");
 		CursorManager::GetInstance()->WriteBuffer(44.0f, 18.0f, (char*)"бс");
 		CursorManager::GetInstance()->WriteBuffer(46.0f, 18.0f, (char*)"бс");
@@ -254,30 +256,30 @@ void Menu::Render()
 		CursorManager::GetInstance()->WriteBuffer(56.0f, 18.0f, (char*)"бс");
 		CursorManager::GetInstance()->WriteBuffer(58.0f, 18.0f, (char*)"бс");
 		CursorManager::GetInstance()->WriteBuffer(60.0f, 18.0f, (char*)"бс");
+		CursorManager::GetInstance()->WriteBuffer(62.0f, 18.0f, (char*)"бс");
 
-		CursorManager::GetInstance()->WriteBuffer(40.0f, 19.0f, (char*)"бс");
 		CursorManager::GetInstance()->WriteBuffer(42.0f, 19.0f, (char*)"бс");
-		CursorManager::GetInstance()->WriteBuffer(44.0f, 19.0f, (char*)"бр");
+		CursorManager::GetInstance()->WriteBuffer(44.0f, 19.0f, (char*)"бс");
 		CursorManager::GetInstance()->WriteBuffer(46.0f, 19.0f, (char*)"бр");
-		CursorManager::GetInstance()->WriteBuffer(48.0f, 19.0f, (char*)"бс");
+		CursorManager::GetInstance()->WriteBuffer(48.0f, 19.0f, (char*)"бр");
 		CursorManager::GetInstance()->WriteBuffer(50.0f, 19.0f, (char*)"бс");
 		CursorManager::GetInstance()->WriteBuffer(52.0f, 19.0f, (char*)"бс");
-		CursorManager::GetInstance()->WriteBuffer(54.0f, 19.0f, (char*)"бр");
+		CursorManager::GetInstance()->WriteBuffer(54.0f, 19.0f, (char*)"бс");
 		CursorManager::GetInstance()->WriteBuffer(56.0f, 19.0f, (char*)"бр");
-		CursorManager::GetInstance()->WriteBuffer(58.0f, 19.0f, (char*)"бс");
+		CursorManager::GetInstance()->WriteBuffer(58.0f, 19.0f, (char*)"бр");
 		CursorManager::GetInstance()->WriteBuffer(60.0f, 19.0f, (char*)"бс");
+		CursorManager::GetInstance()->WriteBuffer(62.0f, 19.0f, (char*)"бс");
 
-		CursorManager::GetInstance()->WriteBuffer(42.0f, 20.0f, (char*)"бс");
-		CursorManager::GetInstance()->WriteBuffer(44.0f, 20.0f, (char*)"бр");
+		CursorManager::GetInstance()->WriteBuffer(44.0f, 20.0f, (char*)"бс");
 		CursorManager::GetInstance()->WriteBuffer(46.0f, 20.0f, (char*)"бр");
-		CursorManager::GetInstance()->WriteBuffer(48.0f, 20.0f, (char*)"бс");
+		CursorManager::GetInstance()->WriteBuffer(48.0f, 20.0f, (char*)"бр");
 		CursorManager::GetInstance()->WriteBuffer(50.0f, 20.0f, (char*)"бс");
 		CursorManager::GetInstance()->WriteBuffer(52.0f, 20.0f, (char*)"бс");
-		CursorManager::GetInstance()->WriteBuffer(54.0f, 20.0f, (char*)"бр");
+		CursorManager::GetInstance()->WriteBuffer(54.0f, 20.0f, (char*)"бс");
 		CursorManager::GetInstance()->WriteBuffer(56.0f, 20.0f, (char*)"бр");
-		CursorManager::GetInstance()->WriteBuffer(58.0f, 20.0f, (char*)"бс");
+		CursorManager::GetInstance()->WriteBuffer(58.0f, 20.0f, (char*)"бр");
+		CursorManager::GetInstance()->WriteBuffer(60.0f, 20.0f, (char*)"бс");
 
-		CursorManager::GetInstance()->WriteBuffer(40.0f, 21.0f, (char*)"бс");
 		CursorManager::GetInstance()->WriteBuffer(42.0f, 21.0f, (char*)"бс");
 		CursorManager::GetInstance()->WriteBuffer(44.0f, 21.0f, (char*)"бс");
 		CursorManager::GetInstance()->WriteBuffer(46.0f, 21.0f, (char*)"бс");
@@ -288,30 +290,30 @@ void Menu::Render()
 		CursorManager::GetInstance()->WriteBuffer(56.0f, 21.0f, (char*)"бс");
 		CursorManager::GetInstance()->WriteBuffer(58.0f, 21.0f, (char*)"бс");
 		CursorManager::GetInstance()->WriteBuffer(60.0f, 21.0f, (char*)"бс");
+		CursorManager::GetInstance()->WriteBuffer(62.0f, 21.0f, (char*)"бс");
 
-		CursorManager::GetInstance()->WriteBuffer(42.0f, 22.0f, (char*)"бс");
-		CursorManager::GetInstance()->WriteBuffer(44.0f, 22.0f, (char*)"бр");
+		CursorManager::GetInstance()->WriteBuffer(44.0f, 22.0f, (char*)"бс");
 		CursorManager::GetInstance()->WriteBuffer(46.0f, 22.0f, (char*)"бр");
-		CursorManager::GetInstance()->WriteBuffer(48.0f, 22.0f, (char*)"бс");
+		CursorManager::GetInstance()->WriteBuffer(48.0f, 22.0f, (char*)"бр");
 		CursorManager::GetInstance()->WriteBuffer(50.0f, 22.0f, (char*)"бс");
 		CursorManager::GetInstance()->WriteBuffer(52.0f, 22.0f, (char*)"бс");
-		CursorManager::GetInstance()->WriteBuffer(54.0f, 22.0f, (char*)"бр");
+		CursorManager::GetInstance()->WriteBuffer(54.0f, 22.0f, (char*)"бс");
 		CursorManager::GetInstance()->WriteBuffer(56.0f, 22.0f, (char*)"бр");
-		CursorManager::GetInstance()->WriteBuffer(58.0f, 22.0f, (char*)"бс");
+		CursorManager::GetInstance()->WriteBuffer(58.0f, 22.0f, (char*)"бр");
+		CursorManager::GetInstance()->WriteBuffer(60.0f, 22.0f, (char*)"бс");
 
-		CursorManager::GetInstance()->WriteBuffer(40.0f, 23.0f, (char*)"бс");
 		CursorManager::GetInstance()->WriteBuffer(42.0f, 23.0f, (char*)"бс");
-		CursorManager::GetInstance()->WriteBuffer(44.0f, 23.0f, (char*)"бр");
+		CursorManager::GetInstance()->WriteBuffer(44.0f, 23.0f, (char*)"бс");
 		CursorManager::GetInstance()->WriteBuffer(46.0f, 23.0f, (char*)"бр");
-		CursorManager::GetInstance()->WriteBuffer(48.0f, 23.0f, (char*)"бс");
+		CursorManager::GetInstance()->WriteBuffer(48.0f, 23.0f, (char*)"бр");
 		CursorManager::GetInstance()->WriteBuffer(50.0f, 23.0f, (char*)"бс");
 		CursorManager::GetInstance()->WriteBuffer(52.0f, 23.0f, (char*)"бс");
-		CursorManager::GetInstance()->WriteBuffer(54.0f, 23.0f, (char*)"бр");
+		CursorManager::GetInstance()->WriteBuffer(54.0f, 23.0f, (char*)"бс");
 		CursorManager::GetInstance()->WriteBuffer(56.0f, 23.0f, (char*)"бр");
-		CursorManager::GetInstance()->WriteBuffer(58.0f, 23.0f, (char*)"бс");
+		CursorManager::GetInstance()->WriteBuffer(58.0f, 23.0f, (char*)"бр");
 		CursorManager::GetInstance()->WriteBuffer(60.0f, 23.0f, (char*)"бс");
+		CursorManager::GetInstance()->WriteBuffer(62.0f, 23.0f, (char*)"бс");
 
-		CursorManager::GetInstance()->WriteBuffer(40.0f, 24.0f, (char*)"бс");
 		CursorManager::GetInstance()->WriteBuffer(42.0f, 24.0f, (char*)"бс");
 		CursorManager::GetInstance()->WriteBuffer(44.0f, 24.0f, (char*)"бс");
 		CursorManager::GetInstance()->WriteBuffer(46.0f, 24.0f, (char*)"бс");
@@ -322,11 +324,21 @@ void Menu::Render()
 		CursorManager::GetInstance()->WriteBuffer(56.0f, 24.0f, (char*)"бс");
 		CursorManager::GetInstance()->WriteBuffer(58.0f, 24.0f, (char*)"бс");
 		CursorManager::GetInstance()->WriteBuffer(60.0f, 24.0f, (char*)"бс");
+		CursorManager::GetInstance()->WriteBuffer(62.0f, 24.0f, (char*)"бс");
 	}
 
 	// Option ┼щ┤╧
 	{
-		//d
+		CursorManager::GetInstance()->WriteBuffer(14.0f, 30.0f, (char*)"бс");
+		CursorManager::GetInstance()->WriteBuffer(14.0f, 30.0f, (char*)"бс");
+		CursorManager::GetInstance()->WriteBuffer(14.0f, 30.0f, (char*)"бс");
+		CursorManager::GetInstance()->WriteBuffer(14.0f, 30.0f, (char*)"бс");
+
+
+		CursorManager::GetInstance()->WriteBuffer(14.0f, 30.0f, (char*)"бс");
+		CursorManager::GetInstance()->WriteBuffer(18.0f, 30.0f, (char*)"бс");
+		CursorManager::GetInstance()->WriteBuffer(22.0f, 30.0f, (char*)"бс");
+
 	}
 
 	// Exit ┐в╜║
